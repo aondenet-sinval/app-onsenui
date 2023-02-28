@@ -1,0 +1,41 @@
+body {
+  font-size: 16px;
+  font-family: Sans-Serif;
+}
+/* Formulários */
+form {
+  background-color: #cccccc;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.2em;
+}
+main #conteudo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section{
+  padding: 0.2em;
+  margin: 0.2em;
+  width: 18.3em;
+  background-color: #CC9;
+}
+input {
+  padding: 0.2em;
+  border-color: #cccccc;
+  border-radius: 0.3em;
+}
+strong{
+  padding-bottom: 0.2em;
+}
+#vendidos{
+  font-size: 0.8em;
+}
+header h2{
+  display: flex;
+  padding: 0.2em;
+}
+header{
+  font-size: 0.8em;
+}

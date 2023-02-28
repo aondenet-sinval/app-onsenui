@@ -1,0 +1,110 @@
+body {
+  font-size: 16px;
+  font-family: Sans-Serif;
+  font-family: "Trebuchet MS", sans-serif;
+	margin: 50px;
+}
+/* Jquery base */
+.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+/* Jquery End */
+/* Formulários */
+form {
+  background-color: #cccccc;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-bottom: 0.5em;
+  padding: 0.2em;
+}
+#conteudo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#conteudo .no-print{
+  padding: 0.2em;
+  margin: 0.2em;
+  width: 18.3em;
+  background-color: #CC9;
+}
+.print{
+  padding: 0.2em;
+  margin: 0.2em;
+  width: 18.3em;
+  border: 1px solid black;
+  border-radius: 0.3em;
+  background-color: #cccccc;
+}
+input {
+  padding: 0.2em;
+  border-color: #cccccc;
+  border-radius: 0.3em;
+}
+strong{
+  padding-bottom: 0.2em;
+}
+#vendidos{
+  font-size: 0.8em;
+}
+header h2{
+  display: flex;
+  padding: 0.2em;
+}
+header{
+  font-size: 0.8em;
+}
+/* print vendas */
+@media print {
+  footer,
+  nav,
+  .no-print,
+  .no-print{
+    display: none;
+  }
+}
+@media print {
+  .print{
+    display: block;
+    background-color: white;
+  }
+}
+.vendidos{
+  display: block;
+  background-color: white;
+  font: black;
+}
