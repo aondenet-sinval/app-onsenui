@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "onsenui": "uglifyjs base.js components/*.js --output my-onsenui.min.js"
+    "uglify": "uglifyjs base.js components/*.js --output my-onsenui.min.js"
   },
   "keywords": [],
   "author": "Sinval Gomes dos Santos",

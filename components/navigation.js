@@ -5,5 +5,14 @@ const home = ()=>{
 }
 const about = ()=>{
   const navigator = document.querySelector('#navigator');
-  navigator.pushPage('about.html');
+  navigator.insertPage(1,'about.html');
+}
+
+const openMenu = () => {
+    document.querySelector('#menu').open()    
+  }
+
+const loadPage = (page) => {
+  document.querySelector('#menu').close();
+  document.querySelector('#navigator').bringPageTop(page, { animation: 'fade' });
 }
