@@ -1,0 +1,13 @@
+{
+  "name": "Onsen UI CDN e PWA",
+  "short_name": "Onsen UI-PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ef4e2a",
+  "background_color": "#fff",
+  "icons": [{
+    "src": "./images/aondenet.png",
+    "sizes": "145x145",
+    "type": "image/png"
+  }]
+}

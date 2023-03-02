@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
     <meta http-equiv="Content-Security-Policy"
       content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="manifest" href="/manifest.json">
     <!-- CDN -->
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/solid.min.js" charset="utf-8"></script>
+
   </head>
   <body>
     <ons-splitter>
@@ -57,7 +59,7 @@
           <div class="center" onclick="home()">Home</div>
           <div class="left">
             <ons-toolbar-button onclick="openMenu()">
-              <ons-icon icon="md-menu"></ons-icon>
+              <ons-icon icon="md-menu" ></ons-icon>
             </ons-toolbar-button>
           </div>
         </ons-toolbar>
@@ -76,5 +78,13 @@
         This is the about page.
       </ons-page>
     </template>
+    <script src="./my-onsenui.min.js" charset="utf-8"></script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(() => console.log("Service Worker Registered"))
+          .catch(e => console.log(e));
+      }
+    </script>
   </body>
 </html>

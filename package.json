@@ -4,19 +4,10 @@
   "description": "Aplicação com OnsenUI",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "dev": "http-server .",
     "uglify": "uglifyjs base.js components/*.js --output my-onsenui.min.js"
   },
   "keywords": [],
   "author": "Sinval Gomes dos Santos",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "nodemon": "^2.0.20"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.0"
-  }
+  "license": "ISC"
 }
